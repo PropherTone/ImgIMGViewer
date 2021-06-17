@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/video"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <TextureView-->
+<!--        android:id="@+id/videoPlayer"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="250dp"/>-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/videoStarter"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/videoStart"-->
+<!--        android:src="@drawable/ic_baseline_arrow_right_24"-->
+<!--        android:background="@drawable/start"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"/>-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:visibility="invisible"-->
+<!--        android:id="@+id/videoController"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/videoControl"-->
+<!--            android:src="@drawable/ic_baseline_arrow_right_24"-->
+<!--            android:background="@color/white2"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"/>-->
+
+<!--    </RelativeLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/cons"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/newcolorful"
+    android:clipChildren="true">
+
+    <com.example.imgviewer.CustomView.MyViewPager
+        android:id="@+id/imgVP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/viewList"
+        app:tabMode="scrollable"
+        android:foreground="@color/foredark"
+        app:tabIndicatorColor="@color/skyblue"
+        app:tabIndicatorHeight="30dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="140dp"
+        android:layout_height="30dp"/>
+
+    <ImageButton
+        android:id="@+id/restPage"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="75dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/maindelete_allpage"/>
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_height="310dp"
+        android:layout_width="310dp">
+
+        <ImageView
+            android:elevation="2dp"
+            android:translationZ="2dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/background"
+            android:background="@drawable/buttonback"
+            android:layout_width="260dp"
+            android:layout_height="260dp"/>
+        <Button
+            android:elevation="5dp"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_marginStart="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/folder"
+        android:id="@+id/choosefile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+        <Button
+            android:elevation="5dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="40dp"
+            android:id="@+id/ImgLibChoose"
+            android:background="@drawable/picture"
+            android:layout_width="55dp"
+            android:layout_height="55dp"/>
+
+        <Button
+            android:elevation="5dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/videoLibChoose"
+            android:background="@drawable/video"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/btn"
+        android:elevation="10dp"
+        android:src="@drawable/ic_baseline_arrow_right_24"
+        android:background="@drawable/buttonwave" />
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/textbtn"
+        android:elevation="5dp"
+        android:src="@drawable/text"/>
+
+    <ImageButton
+        android:id="@+id/showFAB"
+        android:visibility="invisible"
+        android:layout_gravity="bottom|end"
+        android:background="@color/foreWhite"
+        android:foreground="@color/foredark"
+        android:layout_marginEnd="-20dp"
+        android:layout_marginBottom="85dp"
+        android:layout_width="50dp"
+        android:layout_height="70dp"/>
+    <ImageView
+        android:id="@+id/backiv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/curclestyle"/>
+    <ImageView
+        android:id="@+id/wave"
+        android:visibility="invisible"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:elevation="8dp"
+        android:backgroundTint="@color/lightblue"
+        android:background="@drawable/curclestyle"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

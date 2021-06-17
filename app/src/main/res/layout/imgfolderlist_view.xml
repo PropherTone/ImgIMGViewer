@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/iMGFolderRL"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/isSelected_IMGFolderView"
+            android:layout_centerVertical="true"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_toEndOf="@+id/isSelected_IMGFolderView"
+            android:id="@+id/isSelected_IMGFolderName"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    <CheckBox
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/iMGFolderCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_alignBottom="@+id/isSelected_IMGFolderName"
+        android:layout_width="match_parent"
+        android:background="@color/foredark"
+        android:layout_height="2dp"/>
+
+</RelativeLayout>

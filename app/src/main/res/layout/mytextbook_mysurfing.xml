@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/star_HTTP"
+        android:layout_marginTop="20dp"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:elevation="15dp"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/web_confirm"
+        android:layout_width="250dp"
+        android:layout_height="600dp">
+
+        <ListView
+            android:id="@+id/type_list"
+            android:elevation="2dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+
+            android:background="@drawable/curcle_typelist"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <ImageView
+            android:elevation="3dp"
+            android:background="@color/lightingpink"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:elevation="3dp"
+                android:id="@+id/uri"
+                android:text="@string/uri"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/lightblue"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+            <EditText
+                android:elevation="2dp"
+                android:id="@+id/enter_uri"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:textColor="@color/deepgray"
+                android:gravity="center"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:elevation="3dp"
+                android:id="@+id/uri_type"
+                android:text="@string/type"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/lightblue"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+            <EditText
+                android:id="@+id/enter_type"
+                android:elevation="2dp"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:textColor="@color/deepgray"
+                android:gravity="center"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:elevation="5dp"
+            android:layout_gravity="end"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="250dp"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/web_confirmView"
+                android:background="@color/skyblue"
+                android:layout_gravity="center"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/web_confirmUri"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="确认"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

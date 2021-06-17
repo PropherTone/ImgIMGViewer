@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.imgviewer">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:icon="@mipmap/ic_launcher2"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher2_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ImgViewer"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Service.AlarmView"
+            android:label="@string/AlarmView"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.ImgViewer.NoActionBar" />
+        <activity
+            android:name=".View.TextViewer"
+            android:label="@string/title_activity_TextViewer"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.ImgViewer.NoActionBar" />
+        <activity
+            android:name=".View.EditTextActivity"
+            android:label="@string/title_activity_Edittextactivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.ImgViewer.NoActionBar" />
+        <activity
+            android:name=".View.IMGLibChoose"
+            android:label="@string/title_activity_i_m_g_lib_choose"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.ImgViewer.NoActionBar" />
+<!--        <activity-->
+<!--            android:name=".View.VideoLibFolderChoose"-->
+<!--            android:label="@string/VideoLibFolderChoose"-->
+<!--            android:configChanges="orientation|keyboardHidden|screenSize"-->
+<!--            android:theme="@style/Theme.ImgViewer.NoActionBar" />-->
+        <activity
+            android:name=".View.MyTextBook"
+            android:label="@string/title_activity_my_text_book"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.ImgViewer.NoActionBar" />
+        <activity
+            android:name=".View.SplashActivity"
+            android:label="@string/title_activity_splash"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.ImgViewer.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".View.ImgLibFolderChoose"
+            android:label="@string/title_activity_img_lib_folder_choose"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.ImgViewer.NoActionBar" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <activity
+            android:name=".View.FileChooseActivity"
+            android:label="@string/title_activity_file_choose"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.ImgViewer.NoActionBar" />
+        <activity
+            android:name=".View.MainActivity"
+            android:label="@string/main"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.ImgViewer.NoActionBar" />
+        <activity android:name=".test.InternetSurfing" />
+
+        <service android:name=".Service.CallingService" />
+    </application>
+
+</manifest>

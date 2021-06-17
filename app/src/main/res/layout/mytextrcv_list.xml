@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:elevation="2dp"
+        android:background="@color/lightblue"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+
+    <ImageView
+        android:foreground="@color/foreWhite"
+        android:src="@drawable/background"
+        android:id="@+id/myTimg"
+        android:scaleType="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/myTextview"
+        android:background="@color/foredark"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+
+
+        <TextView
+            android:gravity="center"
+            android:textSize="12sp"
+            android:id="@+id/createDate"
+            android:textColor="@color/white"
+            android:background="@color/foredark"
+            android:padding="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:id="@+id/alarmDATE"
+            android:background="@color/foredark"
+            android:padding="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/isAlarmIcon"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/ic_baseline_notifications_active_24"
+            android:layout_toStartOf="@+id/alarmDATE"
+            android:layout_alignParentBottom="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+
+    <ImageView
+        android:visibility="invisible"
+        android:background="@drawable/delete"
+        android:id="@+id/delete_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:visibility="invisible"
+        android:background="@drawable/delete_text"
+        android:id="@+id/deletesrc"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_baseline_delete_forever_24"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/botton_colorline"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:background="@color/white"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="10dp"-->
+<!--        android:orientation="horizontal" />-->
+
+</RelativeLayout>

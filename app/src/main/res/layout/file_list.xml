@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="70dp"
+    android:layout_width="match_parent"
+    android:id="@+id/folderListItem"
+    android:clipChildren="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:clipChildren="false"
+        android:layout_centerInParent="true"
+        android:elevation="4dp"
+        android:id="@+id/Folderlayout"
+        android:background="@drawable/curclefolderlist"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/file_preview"
+            android:background="@drawable/ic_baseline_folder_24"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/file_preview"
+            android:id="@+id/folderlList_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <CheckBox
+            android:id="@+id/foldercheck"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentEnd="true"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

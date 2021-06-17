@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/foreWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/myText_viewPager"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <ImageView
+        android:id="@+id/textBack"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:alpha="0.8"/>
+
+    <RelativeLayout
+        android:id="@+id/addTextPopWindows"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/addTextFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+            <ImageButton
+                android:id="@+id/callPopWindows"
+                android:layout_alignParentBottom="true"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/skyblue"/>
+
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/goBack"
+        android:src="@drawable/ic_mytext_left"
+        android:background="@drawable/mytext_imgbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="124dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+    
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/viewpager_tab"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_centerHorizontal="true"
+        android:background="@color/foreWhite"
+        android:layout_marginTop="25dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"/>
+
+</RelativeLayout>

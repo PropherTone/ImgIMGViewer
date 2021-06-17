@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ShapeButton">
+        <!--按下的颜色-->
+        <attr name="pressed_color" format="reference|color" />
+        <!--正常状态颜色-->  <attr name="normal_color" format="reference|color" />
+        <!--不可用的颜色-->  <attr name="enabled_color" format="reference|color" />
+        <!--按钮圆角半径-->  <attr name="radius_size" format="dimension" />
+        <!--gravity-->  <attr name="android:gravity" />  </declare-styleable>
+
+</resources>

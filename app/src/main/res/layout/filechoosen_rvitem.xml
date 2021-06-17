@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="30dp"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:id="@+id/choosenFolderName"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:background="@drawable/ic_baseline_navigate_next_24"
+        android:layout_width="10dp"
+        android:layout_height="10dp"/>
+
+
+
+
+
+
+
+</LinearLayout>

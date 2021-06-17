@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="70dp"
+    android:layout_width="match_parent"
+    android:id="@+id/ImgListItem"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<RelativeLayout
+    android:elevation="4dp"
+    android:layout_centerInParent="true"
+    android:id="@+id/imgFolderlayout"
+    android:background="@drawable/curclefolderlist"
+    android:layout_width="match_parent"
+    android:layout_height="67dp">
+
+    <View
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/liner_preview"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/imgpreview"
+        android:background="@drawable/liner_preview"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+
+    <TextView
+        android:layout_marginStart="15dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imgpreview"
+        android:id="@+id/ImgFilelList_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+<CheckBox
+    android:id="@+id/check"
+    android:layout_marginEnd="5dp"
+    android:layout_centerVertical="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

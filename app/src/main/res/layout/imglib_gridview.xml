@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="100dp"
+    android:layout_height="100dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+    <ImageView
+        android:id="@+id/IMGpreview"
+        android:scaleType="center"
+        android:layout_centerInParent="true"
+        android:layout_width="95dp"
+        android:layout_height="95dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/forceground"
+        android:src="@color/white2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:visibility="invisible"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/selectimg"
+        android:background="@drawable/selected"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+</RelativeLayout>

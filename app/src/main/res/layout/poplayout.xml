@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    app:radius_size="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/colorful"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <Button
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_marginStart="40dp"
+        android:layout_gravity="center|start"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="@drawable/ic_baseline_image_search_24"
+        android:id="@+id/choosefile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <Button
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_gravity="center"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="@drawable/ic_baseline_arrow_right_24"
+        android:id="@+id/confirm"
+        android:layout_width="180dp"
+        android:layout_height="150dp"/>
+    <Button
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_marginEnd="40dp"
+        android:layout_gravity="center|end"
+        android:id="@+id/ImgLibChoose"
+        android:background="@drawable/ic_baseline_create_new_folder_24"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+
+</LinearLayout>
